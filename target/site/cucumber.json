@@ -1,0 +1,238 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 6,
+        "name": "01 - Check the password protected area popup display",
+        "description": "",
+        "id": "check-the-protected-area-popup-display-after-inject-the-shortcode;01---check-the-password-protected-area-popup-display",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6879015820,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I open the wordpress website",
+            "match": {
+              "location": "CheckDisplaySteps.i_open_the_wordpress_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3199889316,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I log in to the website",
+            "match": {
+              "location": "CheckDisplaySteps.i_log_in_to_the_website(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Username",
+                  "Password"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "tamnguyen",
+                  "Abcd1234"
+                ],
+                "line": 10
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2977824699,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I create a new post",
+            "match": {
+              "location": "CheckDisplaySteps.i_create_a_new_post()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3434007603,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "write the content",
+            "match": {
+              "location": "CheckDisplaySteps.write_the_content(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Title",
+                  "Content"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "Password protected plugin",
+                  "The smart way to create password-protected areas in WordPress. See pricing"
+                ],
+                "line": 14
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1027415937,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "insert the shortcode to hide text",
+            "match": {
+              "location": "CheckDisplaySteps.insert_the_shortcode_to_hide_text_something(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Password",
+                  "Hidden text"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "abc123",
+                  "Single: $39"
+                ],
+                "line": 17
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 324425141,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "publish post",
+            "match": {
+              "location": "CheckDisplaySteps.publish_post()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2721097573,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "press the View post button",
+            "match": {
+              "location": "CheckDisplaySteps.press_the_view_post_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 91878020,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I verify the protected area popup is displayed",
+            "match": {
+              "location": "CheckDisplaySteps.i_verify_the_protected_area_popup_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 32828593,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the popup header is \"PROTECTED AREA\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PROTECTED AREA",
+                  "offset": 21
+                }
+              ],
+              "location": "CheckDisplaySteps.the_popup_header_is_something(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 32876627,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the popup display with text \"This content is password-protected. Please verify with a password to unlock the content.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "This content is password-protected. Please verify with a password to unlock the content.",
+                  "offset": 29
+                }
+              ],
+              "location": "CheckDisplaySteps.the_popup_display_with_text_something(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 23380257,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the placeholder is \"Enter your password..\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Enter your password..",
+                  "offset": 20
+                }
+              ],
+              "location": "CheckDisplaySteps.the_placeholder_is_something(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1088518100,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the submit button displayed",
+            "match": {
+              "location": "CheckDisplaySteps.the_submit_button_displayed()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Check the protected area popup display after inject the shortcode",
+    "description": "As a user\r\nI want to inject the passster shortcode to set the password protected area",
+    "id": "check-the-protected-area-popup-display-after-inject-the-shortcode",
+    "keyword": "Feature",
+    "uri": "TC01_ProtectedAreaDisplay.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@PasssertDisplay"
+      }
+    ]
+  }
+]

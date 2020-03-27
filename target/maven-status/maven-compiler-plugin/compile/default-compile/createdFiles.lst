@@ -1,0 +1,5 @@
+commons\AbstractPage.class
+commons\AbstractTest.class
+commons\VerificationFailures.class
+pageObject\HomePageObject.class
+pageUI\HomePageUI.class
