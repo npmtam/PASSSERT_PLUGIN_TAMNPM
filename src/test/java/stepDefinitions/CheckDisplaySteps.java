@@ -93,7 +93,23 @@ public class CheckDisplaySteps extends AbstractTest {
 
     @And("^the submit button displayed$")
     public void the_submit_button_displayed() {
+        verifyTrue(homePage.checkSubmitButtonDisplay());
+    }
+
+    @Then("^the error message should appears$")
+    public void the_error_message_should_appears() {
+        verifyTrue(homePage.checkErrorMsgDisplay());
+    }
+
+    @And("^I input the password \"([^\"]*)\"$")
+    public void i_input_the_password_something(String password) {
+        homePage.inputToPasssertPassword(password);
+    }
+
+    @And("^I click Submit button$")
+    public void i_click_submit_button() {
         homePage.clickSubmitButton();
     }
+
 
 }

@@ -22,9 +22,7 @@ public class HomePageUI {
     public static final String PASSSERT_HINT_TEXT = "//form[@id='password-form']/p";
     public static final String PASSSERT_PASSWORD = "//input[@placeholder='Enter your password..']";
     public static final String PASSSERT_SUBMIT_BUTTON = "//button[@id='passster_submit']";
-
-
-
+    public static final String PASSSERT_ERROR_MESSAGE = "//span[@class='passster-error']";
 
     //Shortcode
     public static final String SHORTCODE = " [passster password=\"%s\"]%s[/passster]";

@@ -74,4 +74,12 @@ public class HomePageObject extends AbstractPage {
         String placeHolder = getAttributeValue(HomePageUI.PASSSERT_PASSWORD, "placeholder");
         return expected.equals(placeHolder);
     }
+
+    public boolean checkErrorMsgDisplay(){
+        return isElementDisplayed(HomePageUI.PASSSERT_ERROR_MESSAGE);
+    }
+
+    public boolean checkSubmitButtonDisplay(){
+        return isElementDisplayed(HomePageUI.PASSSERT_SUBMIT_BUTTON);
+    }
 }
